@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('assets/OLDMONEY BG.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.wardrobe-container {
+    display: flex;
+}
+
+.body-container {
+    position: relative;
+    width: 300px; /* Adjust width as necessary */
+    height: 600px; /* Adjust height as necessary */
+}
+
+.body-container img {
+    position: absolute;
+    width: 100%; /* Adjust size as necessary */
+}
+
+#body {
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+
+#bottoms {
+    z-index: 3;
+    top: 400px; /* Adjust as necessary */
+    left: 17px;
+    height: auto;
+    width: 80%;
+}
+
+#arms {
+    z-index: 4;
+    top: 270px; /* Adjust top value to move arms down */
+    left: -1px; /* Adjust left value to move arms */
+}
+
+#long-sleeve-clothes {
+    z-index: 5; /* Ensure clothes are above arms */
+    top: 140px;
+    left: -20px; /* Adjust left value to move clothes */
+    width: 110%; /* Increase width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#short-sleeve-clothes {
+    z-index: 5; /* Ensure clothes are above arms */
+    top: 140px;
+    left: -2px; /* Adjust left value to move clothes */
+}
+
+#socks {
+    z-index: 2;
+    top: 819px; /* Adjust as necessary */
+    left: 0;
+}
+
+#shoes {
+    z-index: 6;
+    top: 865px; /* Adjust as necessary */
+    left: -33px;
+    width: 120%;
+}
+
+#hands {
+    z-index: 7;
+    top: 270px; /* Adjust as necessary to align with arms */
+    left: 0;
+}
+
+#watch {
+    z-index: 8;
+    top: 500px;
+    left: 220px;
+    width: 20%;
+}
+
+.options-container {
+    margin-left: 20px;
+}
+
+.options-container ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.options-container li {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.options-container li img {
+    width: 50px; /* Adjust size as necessary */
+    height: auto;
+}
